@@ -1,0 +1,42 @@
+{
+  "classes": [
+    {"id":"scrapper","name":"Scrapper","icon":"✦","description":"Hits hard. Thinks later.","stats":{"STR":2,"DEX":0,"CON":1,"INT":-1,"CHA":0,"SPD":0,"LCK":0},"skill":"Haymaker","skillText":"Deal 5 damage to an adjacent foe.","color":"#b3261e"},
+    {"id":"mender","name":"Mender","icon":"✚","description":"Patchwork with opinions.","stats":{"STR":0,"DEX":0,"CON":1,"INT":1,"CHA":1,"SPD":-1,"LCK":0},"skill":"Pocket Lint","skillText":"Restore 4 health to a nearby ally.","color":"#7c8f3a"},
+    {"id":"slink","name":"Slink","icon":"⌁","description":"Quick feet, empty pockets.","stats":{"STR":-1,"DEX":2,"CON":0,"INT":0,"CHA":0,"SPD":2,"LCK":0},"skill":"Cheap Shot","skillText":"Deal 3 damage at range 3.","color":"#5b3a6b"},
+    {"id":"oracle","name":"Oracle","icon":"◉","description":"Knows a little too much.","stats":{"STR":-1,"DEX":0,"CON":0,"INT":2,"CHA":1,"SPD":0,"LCK":1},"skill":"Bad Feeling","skillText":"Deal 3 damage to every foe within 2 tiles.","color":"#d9b84a"}
+  ],
+  "items": [
+    {"id":"tin-can","name":"Lucky Tin Can","icon":"🥫","effect":"+2 STR","stat":"STR","amount":2,"cost":2},
+    {"id":"wool-sock","name":"Wool Sock of Fate","icon":"🧦","effect":"+2 LCK","stat":"LCK","amount":2,"cost":2},
+    {"id":"bell","name":"Dented Bell","icon":"🔔","effect":"+2 CHA","stat":"CHA","amount":2,"cost":2},
+    {"id":"bandage","name":"Emergency Bandage","icon":"🩹","effect":"Restore 5 HP","heal":5,"cost":2}
+  ],
+  "statuses": [
+    {"id":"bleeding","name":"Bleeding","icon":"✦","color":"#b3261e","text":"Loses 1 HP after each turn."},
+    {"id":"rattled","name":"Rattled","icon":"〰","color":"#d9b84a","text":"Next hit deals 1 less damage."}
+  ],
+  "tiles": [
+    {"id":"floor","name":"Floor","color":"#d8d0c0","move":true,"cover":0},
+    {"id":"rug","name":"Stained rug","color":"#c4b8a0","move":true,"cover":0},
+    {"id":"junk","name":"Junk pile","color":"#948d7e","move":false,"cover":1},
+    {"id":"hazard","name":"Mystery puddle","color":"#809044","move":true,"cover":0,"damage":1},
+    {"id":"cover","name":"Cardboard cover","color":"#a78660","move":true,"cover":1}
+  ],
+  "enemies": [
+    {"id":"trash-goblin","name":"Trash Goblin","icon":"♟","health":7,"damage":2,"range":1,"color":"#7c8f3a","xp":1},
+    {"id":"sock-wraith","name":"Sock Wraith","icon":"☁","health":5,"damage":2,"range":2,"color":"#5b3a6b","xp":1},
+    {"id":"bin-rat","name":"Bin Rat","icon":"♞","health":9,"damage":3,"range":1,"color":"#b3261e","xp":2},
+    {"id":"mayor-mold","name":"Mayor Mold","icon":"♛","health":24,"damage":3,"range":2,"color":"#7c8f3a","xp":5,"boss":true}
+  ],
+  "events": [
+    {"title":"A Very Small Parade","text":"Three possums in a trench coat offer to carry your things. You do not have things.","choice":"Accept a suspiciously clean tin","reward":"scrap"},
+    {"title":"The Puddle Has A Name","text":"It says its name is Martin. Martin has seen the future. Martin is mostly dishwater.","choice":"Ask Martin for advice","reward":"food"},
+    {"title":"Municipal Catapult","text":"A county employee points at a catapult and asks if you have a permit for existing.","choice":"Fire yourself at a snack cart","reward":"food"}
+  ],
+  "furniture": [
+    {"id":"radio","name":"Radio of Mild Doom","icon":"📻","stat":"mood","value":1},
+    {"id":"litter","name":"Litter of Unclear Origins","icon":"🪣","stat":"cleanliness","value":1},
+    {"id":"cushion","name":"Cushion With A Past","icon":"🛋️","stat":"comfort","value":1}
+  ],
+  "tracks": ["Purrgatory Polka","Flea Market Fugue","Nine Lives, One Kazoo"]
+}

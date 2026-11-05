@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171512">
+  <title>Cat Lineage — Boon County</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="Cat Lineage home"><span class="mark-icon">✳</span><span>CAT<span class="wordmark-light">LINEAGE</span></span></a>
+      <div class="county-label"><span class="live-dot"></span> BOON COUNTY <span class="county-divider">/</span> <span id="day-label">DAY 01</span></div>
+      <div class="top-tools"><button id="sound-toggle" class="icon-button" title="Toggle radio">♫</button><button id="help-button" class="icon-button" title="How to play">?</button></div>
+    </header>
+    <main id="game-root" aria-live="polite"></main>
+    <footer class="footer"><span>AN UNREASONABLY SMALL CAT OPERA</span><span>MADE OF PAPER, NERVES &amp; QUESTIONABLE CHOICES</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
